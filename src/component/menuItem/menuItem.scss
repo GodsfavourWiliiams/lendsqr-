@@ -1,0 +1,39 @@
+.li {
+    list-style: none;
+    .heading {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #545F7D;
+        padding-left: 30px;
+    }
+    .sub-menu {
+        display: flex;
+        flex-direction: column;
+        a {
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        .sub-menu-list {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 30px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            opacity: 0.6;
+            color: #7A8CB1;
+            &:hover {
+                background-color: #F3FCFC;
+                opacity: 1;
+                color: #213F7D;
+            }
+        }
+    }
+}
