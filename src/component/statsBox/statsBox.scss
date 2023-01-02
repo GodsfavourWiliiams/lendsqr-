@@ -1,0 +1,38 @@
+$font-size: 14px;
+$font-color: #545F7D;
+$bg-color: #fff;
+$border-color: #ddd;
+.stats-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    .statsbox__stat {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        background: #FFFFFF;
+        border: 1px solid rgba(33, 63, 125, 0.06);
+        box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+        border-radius: 4px;
+        width: 100%;
+        padding: 33px;
+        gap: 10px;
+    }
+    .statsbox__stat-value {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: #213F7D;
+    }
+    .statsbox__stat-label {
+        color: $font-color;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+}

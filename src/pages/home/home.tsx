@@ -1,10 +1,11 @@
 import "./home.scss";
+import Wrapper from "../../component/wrapper";
 
 type Props = {}
 
 const Home = (props: Props) => {
   return (
-    <div className='home'>Home</div>
+    <Wrapper>Home</Wrapper>
   )
 }
 

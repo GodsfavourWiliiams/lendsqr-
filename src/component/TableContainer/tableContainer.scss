@@ -1,0 +1,36 @@
+.table-options {
+    position: relative;
+    .option-icon {
+        cursor: pointer;
+    }
+}
+
+.options-wrapper {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    width: max-content;
+    background: #FFFFFF;
+    border: 1px solid rgba(84, 95, 125, 0.04);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options-item {
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.1s ease-in-out;
+    &:hover {
+        color: #ffffff;
+    }
+}

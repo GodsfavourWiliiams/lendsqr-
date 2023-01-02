@@ -7,6 +7,7 @@ import Navbar from './component/navbar/navbar';
 import SideBar from './component/sideBar';
 import ErrorPage from './pages/error404/error';
 import Home from "./pages/home/home";
+import Users from "./pages/users";
 
 
 const AppLayout = () => (
@@ -28,11 +29,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/users",
-        element: <h1>Users</h1>,
+        element: <Users/>,
       },
       {
-        path: "",
-        element: <h1>uer</h1>,
+        path: "/dashboard",
+        element: <h1>Dashboard</h1>,
       },
     ],
   },

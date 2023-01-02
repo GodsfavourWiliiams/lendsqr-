@@ -1,11 +1,27 @@
-import React from 'react'
+import * as React from "react";
+import './statsBox.scss';
 
-type Props = {}
+interface Stats {
+  data: {
+  label: string;
+  value: number;
+  icon: any;
+  }[];
+}
 
-const statsBox = (props: Props) => {
+
+const StatsBox: React.FC<Stats> = ({ data }) => {
   return (
-    <div>statsBox</div>
+    <div className="stats-box">
+      {data.map((stat, index) => (
+        <div className="statsbox__stat" key={index}>
+          <div className="statsbox__stat-icon">{stat.icon}</div>
+          <span className="statsbox__stat-label">{stat.label}</span>
+        <span className="statsbox__stat-value">{stat.value}</span>
+        </div>
+        ))}
+    </div>
   )
 }
 
-export default statsBox;
+export default StatsBox;

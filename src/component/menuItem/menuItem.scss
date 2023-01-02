@@ -1,5 +1,42 @@
 .li {
     list-style: none;
+    .menu-item {
+        display: flex;
+        flex-direction: column;
+        a {
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        .title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #7A8CB1;
+            &hover {
+                color: #213F7D;
+            }
+        }
+        .menu-list {
+            position: relative;
+            display: flex;
+            gap: 10px;
+            padding: 0px 30px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #7A8CB1;
+            &:hover {
+                background-color: #F3FCFC;
+                opacity: 1;
+                color: #213F7D;
+            }
+        }
+    }
     .heading {
         font-style: normal;
         font-weight: 500;
@@ -19,15 +56,14 @@
             line-height: 19px;
         }
         .sub-menu-list {
+            position: relative;
             display: flex;
-            align-items: center;
             gap: 10px;
-            padding: 10px 30px;
+            padding: 12px 30px;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
             line-height: 19px;
-            opacity: 0.6;
             color: #7A8CB1;
             &:hover {
                 background-color: #F3FCFC;
@@ -36,4 +72,27 @@
             }
         }
     }
+}
+
+.stripe {
+    position: absolute;
+    background-color: #39CDCC;
+    width: 4px;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.activeClassName {
+    background-color: #F3FCFC;
+    opacity: 1;
+    color: #213F7D;
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+.d-none {
+    display: none;
 }
